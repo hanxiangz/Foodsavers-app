@@ -6,8 +6,6 @@ app.use(express.json());
 // require database connection 
 const dbConnect = require("./db/dbConnect");
 
-require('dotenv').config()
-
 // Curb Cors Error by adding a header here
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
